@@ -1,0 +1,5 @@
+rootProject.name = 'java-gateway'
+
+include 'module-gateway'
+include 'module-order'
+include 'module-member'
