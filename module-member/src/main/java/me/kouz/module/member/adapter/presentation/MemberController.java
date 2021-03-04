@@ -28,7 +28,7 @@ public class MemberController {
     }
 
     @PostMapping
-    public ResponseEntity<MemberResponse> save(@RequestBody MemberRequest request) {
+    public ResponseEntity<MemberResponse> register(@RequestBody MemberRequest request) {
         MemberResponse saved = memberService.save(request);
         return ResponseEntity.created(URI.create("/api/members/" + saved.getId())).body(saved);
     }
